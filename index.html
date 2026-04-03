@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Agentic Workflows</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Discover Agentic Workflows</h1>
+      <p class="subtitle">Answer a few questions to find the right GitHub Agentic Workflow for your project.</p>
+    </header>
+
+    <main id="app">
+      <!-- Question area -->
+      <div id="question-area"></div>
+
+      <!-- Recommendation area -->
+      <div id="recommendation" class="hidden"></div>
+
+      <!-- Progress bar -->
+      <div id="progress-bar" class="hidden">
+        <div id="progress-fill"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Workflows from <a href="https://github.com/github/gh-aw/tree/v0.65.7/.github/workflows" target="_blank" rel="noopener">github/gh-aw</a> &middot; <a href="https://github.github.com/gh-aw/" target="_blank" rel="noopener">Documentation</a></p>
+    </footer>
+  </div>
+
+  <script src="workflows.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
