@@ -455,6 +455,18 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.github-icon {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.github-icon:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
 /* Scrollbar — matches gh-aw */
 ::-webkit-scrollbar {
   width: 8px;
