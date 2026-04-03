@@ -378,11 +378,9 @@ function showRecommendations() {
 
 function renderCard(wf, label, badgeClass) {
   const addCmd = `gh aw add-wizard ${wf.source}`;
-  const filename = wf.source.split("/").pop();
-  const sourceUrl = `https://github.com/github/gh-aw/tree/v0.65.7/.github/workflows/${filename}`;
   let html = `<div class="rec-card">`;
   html += `<div class="rec-header"><span class="badge ${badgeClass}">${label}</span></div>`;
-  html += `<h3><a href="${sourceUrl}" target="_blank" rel="noopener">${esc(wf.name)}</a></h3>`;
+  html += `<h3><a href="${wf.source}" target="_blank" rel="noopener">${esc(wf.name)}</a></h3>`;
   html += `<p class="rec-desc">${esc(wf.desc)}</p>`;
 
   html += `<div class="rec-tags">`;
